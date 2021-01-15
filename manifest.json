@@ -1,0 +1,37 @@
+{
+	"manifest_version": 3,
+	"name": "Solarize!",
+ 	"description": "Solarize known web sites.",
+ 	"version": "1.0",
+  	"permissions": ["storage"],
+  	"background": {
+    	"service_worker": ["background.js"]
+  	},
+ 	"content_scripts": [
+  		{
+    		"matches": [
+      			"https://developer.chrome.com/*"
+    		],
+    		"js": ["solarize.js"],
+    		"css": ["solarize.css"],
+    		"run_at": "document_idle",
+    		"all_frames": true
+  		}
+	],
+	"browser_action": {
+		"default_icon": {
+	 		"16": "img/icon_16x16.png",
+	 		"32": "img/icon_32x32.png",
+	 		"48": "img/icon_48x48.png",
+	 		"128": "img/icon_128x128.png"
+ 		},
+		"default_popup": "popup.html",
+		"default_title": "Solarize?"
+ 	},
+ 	"icons": {
+ 		"16": "img/icon_16x16.png",
+ 		"32": "img/icon_32x32.png",
+ 		"48": "img/icon_48x48.png",
+ 		"128": "img/icon_128x128.png"
+ 	}
+}
