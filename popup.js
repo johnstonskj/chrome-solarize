@@ -9,11 +9,11 @@ let toggleTheme = document.getElementById('toggleTheme');
 toggleTheme.tabIndex = 0;
 toggleTheme.focus();
 
-chrome.storage.sync.get('theme', function(data) {
-	if (data.theme === "light") {
-		toggleTheme.setAttribute("value", "dark");
+chrome.storage.sync.get("theme", function(data) {
+	if (data.theme === chrome.i18n.getMessage("theme_light")) {
+		toggleTheme.setAttribute("value", chrome.i18n.getMessage("theme_dark"));
 	} else {
-		toggleTheme.setAttribute("value", "light")
+		toggleTheme.setAttribute("value", chrome.i18n.getMessage("theme_light"))
 	}
 });
 

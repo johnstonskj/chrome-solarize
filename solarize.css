@@ -1,30 +1,58 @@
 :root {
-    --solar-c-base03: "#002b36",
-    --solar-c-base02: "#073642",
+    --solar-c-base03: #002b36;
+    --solar-c-base02: #073642;
 
-    --solar-c-base01: "#586e75",
-    --solar-c-base00: "#657b83",
-    --solar-c-base0: "#839496",
-    --solar-c-base1: "#93a1a1",
+    : #586e75;
+    --solar-c-base00: #657b83;
+    --solar-c-base0: #839496;
+    --solar-c-base1: #93a1a1;
 
-    --solar-c-base2: "#eee8d5",
-    --solar-c-base3: "#fdf6e3",
+    --solar-c-base2: #eee8d5;
+    --solar-c-base3: #fdf6e3;
 
-    --solar-c-yellow: "#b58900",
-    --solar-c-orange: "#cb4b16",
-    --solar-c-red: "#dc322f",
-    --solar-c-magenta: "#d33682",
-    --solar-c-violet: "#6c71c4",
-    --solar-c-blue: "#268bd2",
-    --solar-c-cyan: "#2aa198",
-    --solar-c-green: "#859900"
+    --solar-c-yellow: #b58900;
+    --solar-c-orange: #cb4b16;
+    --solar-c-red: #dc322f;
+    --solar-c-magenta: #d33682;
+    --solar-c-violet: #6c71c4;
+    --solar-c-blue: #268bd2;
+    --solar-c-cyan: #2aa198;
+    --solar-c-green: #859900;
+
+    --solar-xc-light-grey: #e1e4e8;
+    --solar-xc-very-light-grey: #eaecef;
 }
 
-solarized-lt-text {
-	color: var(--solar-c-base03);
-	background-color: var(--solar-c-base2);
+.solarized-lt-text {
+	color: var(--solar-c-base03) !important;
+	background-color: var(--solar-c-base3) !important;
 }
 
-solarized-lt-pre {
-	background-color: var(--solar-c-base3);
+.solarized-lt-reversed {
+	color: var(--solar-c-base3) !important;
+	background-color: var(--solar-c-base02) !important;
+}
+
+.solarized-lt-pre {
+	background-color: var(--solar-c-base2) !important;
+}
+
+.solarized-lt-grayed {
+	background-color: var(--solar-xc-light-grey) !important;
+}
+
+.solarized-lt-border-primary {
+	border-color: var(--solar-c-base01) !important;
+}
+
+.solarized-lt-border-secondary {
+	border-color: var(--solar-xc-light-grey) !important;
+}
+
+a.solarized-lt-a {
+	color: var(--solar-c-blue) !important;
+}
+
+a:visited.solarized-lt-a {
+	color: var(--solar-c-violet) !important;
 }

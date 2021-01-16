@@ -3,13 +3,13 @@
 */
 
 body {
-	color: "#002b36";
-	background-color: "#eee8d5";
+	color: #002b36;
+	background-color: #fdf6e3;
 	min-width: 14em;
 }
 
 #toggleTheme {
- 	background-color: "#fdf6e3";
+ 	background-color: #eee8d5;
     height: 2em;
     width: 10em;
     outline: none;

@@ -1,0 +1,17 @@
+{
+	"title": {
+		"message": "Solarize"
+	},
+	"description": {
+		"message": "Solarize known web sites."
+	},
+	"toggle": {
+		"message": "Toggle Theme"
+	},
+	"theme_light": {
+		"message": "light"
+	},
+	"theme_dark": {
+		"message": "dark"
+	}
+}
